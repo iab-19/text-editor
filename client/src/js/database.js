@@ -29,12 +29,12 @@ export const putDb = async (content) => {
   const store = tx.objectStore('finesse');
 
   // Use the .put method to update the data in the database
-  const request = store.put({ text: content });
+  const request = store.put({ id:1, value:content });
 
   // Get confirmation of the request
   const result = await request;
   console.log('result.value', result);
-  return result;
+  return result?.value;
 }
 
 
@@ -59,6 +59,6 @@ export const getDb = async () => {
   // Get confirmation of the request
   const result = await request;
   console.log('result.value', result);
-  return result;
+  return result?.value;
 };
 initdb();
