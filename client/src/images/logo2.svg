@@ -1,0 +1,5 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
+<polygon opacity="1" fill="#3C3C3C" points="75,10, 225,10, 280,100, 225,190, 75,190, 20, 100" />
+     <text x="140" y="160" text-anchor="middle" fill="#e17431" font-size="185">f</text>
+</svg>

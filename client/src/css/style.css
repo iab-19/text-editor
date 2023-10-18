@@ -1,6 +1,10 @@
 /* app shell CSS */
 :root {
   --primary: #e17431;
+  --secondary: #17C3B2;
+  --alternate: #F9ECCC;
+  --color4: #FFF9EC;
+  --pageColor: #3C3C3C;
   --gray: #ececec;
   --whitesmoke: #f5f5f5;
   --dark: #222;
@@ -27,7 +31,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: white;
+  color: var(--alternate);
   font-size: 22px;
   font-weight: 550;
   letter-spacing: 0.9px;
@@ -90,13 +94,13 @@ h1 {
   border-radius: 0.3rem;
   border: 1px solid transparent;
   outline: none;
-  color: #1a1a1a;
-  background-color: #aeaeae;
+  color: var(--primary);
+  background-color: var(--secondary);
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 .btn:hover {
-  background-color: #cecece;
+  background-color: var(--alternate);
   cursor: pointer;
 }
 
@@ -157,12 +161,12 @@ h1 {
 }
 
 .btn.btn-dark {
-  background-color: #1a1a1a;
-  color: #d9e9e8;
+  background-color: var(--monoaki);
+  color: var(--alternate);
 }
 
 .btn.btn-dark:hover {
-  background-color: #5f5f5f;
+  background-color: var(--secondary);
 }
 
 .btn.btn-white {
