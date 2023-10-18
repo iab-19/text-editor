@@ -1,6 +1,6 @@
 
   <!-- Remove comments after generation as they are to be used as a guide to help get started-->
-  # Text Editor
+  # Finesse: The Text Editor
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -25,7 +25,7 @@
 
 
   ## Installation
-  Navigate to the website: [insert deployed site link]
+  Navigate to the website: [Finesse text editor](https://finesse-text-editor-f940b0be5083.herokuapp.com/)
 
   <!-- What are they steps required to install your project? Provide a step-by-step description of how to get the development environment running. -->
 
@@ -54,7 +54,12 @@
   industry standard, but you can always write your own.-->
 
   ## Tests
-  tbd
+  These are the tests that I performed:
+  - Add text, close the application, open the application and confirm the text was saved
+  - Install the application, open application from the desktop, add text and confirm text was saved
+
+  Here is a screenshot of the application:![Screenshot (95)](https://github.com/iab-19/text-editor/assets/132946236/e6d88c57-b7e7-43fa-ada2-0500ea185eaa)
+
 
   <!-- Go the extra mile and write tests for your application. Then provide examples on how to run them here. -->
 
