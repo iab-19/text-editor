@@ -10,25 +10,30 @@ module.exports = () => {
   return {
     mode: 'development',
     entry: {
+      // set the main an install locations
       main: './src/js/index.js',
       install: './src/js/install.js'
     },
     output: {
+      // set the filename and path of the output
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
       new HtmlWebpackPlugin({
+        // set index.html as the template and the title
         template: './index.html',
         title: 'Finesse: The Text Editor'
       }),
 
       new InjectManifest({
+        // set the source and destination of the service worker
         swSrc: './src-sw.js',
         swDest: 'src-sw.js'
       }),
 
       new WebpackPwaManifest({
+        // provide information about the application
         fingerpringts: false,
         inject: true,
         name: 'Finesse: The Text Editor',
@@ -40,6 +45,7 @@ module.exports = () => {
         publicPath: '/',
         icons: [
           {
+            // create images of logo.png with the specified sizes to the destination of assets
             src: path.resolve('src/images/logo.png'),
             sizes: [96, 128, 192, 256, 384, 512],
             destination: path.join('assets', 'icons'),
@@ -59,6 +65,7 @@ module.exports = () => {
           test: /\.m?js$/,
           exclude: /node_modules/,
           use: {
+            // use babel loader to use ES6
             loader: 'babel-loader',
             options: {
               presets: ['@babel/preset-env'],
